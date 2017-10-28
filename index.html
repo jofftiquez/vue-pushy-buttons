@@ -9,7 +9,9 @@
   </head>
   <body>
     <div id="app">
-      <v-pushy-btn></v-pushy-btn>
+      <br>
+      <h1 align="center">{{ title }}</h1>
+      <v-pushy-btn label="Vue Push Buttons" size="lg" color="green"></v-pushy-btn>
     </div>
     <script>
       Vue.use(VuePushyButtons.default)
@@ -17,7 +19,7 @@
         el: '#app',
         data() {
           return {
-            
+            title: 'Vue Push Buttons'
           }
         }
       });

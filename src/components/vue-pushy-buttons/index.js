@@ -2,7 +2,7 @@ import '../../../lib/css/pushy-buttons/pushy-buttons.min.css';
 
 export default (Vue) => {
   Vue.component('v-pushy-btn', {
-    template: '<button :class="generateClasses">{{ label }}</button>',
+    template: '<button :class="generateClasses()">{{ label }}</button>',
     props: {
       label: {
         type: String,
@@ -17,13 +17,11 @@ export default (Vue) => {
         default: 'green'
       }
     },
-    data() {
-      return {}
-    },
     methods: {
       generateClasses() {
-        let _classes = `btn `;
-        return _classes += `btn--${ this.size } btn--${ this.color }`;
+        let _classes = `btn btn--${ this.size } btn--${ this.color }`;
+        console.log(_classes)
+        return _classes;
       }
     }
   });
