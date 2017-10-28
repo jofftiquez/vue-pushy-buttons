@@ -104,7 +104,7 @@ __webpack_require__(2);
 
 exports.default = function (Vue) {
   Vue.component('v-pushy-btn', {
-    template: '<button :class="generateClasses">{{ label }}</button>',
+    template: '<button :class="generateClasses()">{{ label }}</button>',
     props: {
       label: {
         type: String,
@@ -119,14 +119,11 @@ exports.default = function (Vue) {
         default: 'green'
       }
     },
-    data: function data() {
-      return {};
-    },
-
     methods: {
       generateClasses: function generateClasses() {
-        var _classes = 'btn ';
-        return _classes += 'btn--' + this.size + ' btn--' + this.color;
+        var _classes = 'btn btn--' + this.size + ' btn--' + this.color;
+        console.log(_classes);
+        return _classes;
       }
     }
   });
