@@ -1,6 +1,6 @@
 {
   "name": "vue-pushy-buttons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "VueJs component for Pushy Buttons",
   "main": "index.js",
   "scripts": {
