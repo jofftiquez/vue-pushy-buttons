@@ -103,7 +103,7 @@ Object.defineProperty(exports, "__esModule", {
 __webpack_require__(2);
 
 exports.default = function (Vue) {
-  Vue.component('v-push-btn', {
+  Vue.component('v-pushy-btn', {
     template: '<button :class="generateClasses">{{ label }}</button>',
     props: {
       label: {
