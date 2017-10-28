@@ -5,7 +5,7 @@ function createConfig(target) {
     var name = 'index.js';
 
     if(target !== 'commonjs2') {
-        name = 'vue-push-buttons.js'
+        name = 'vue-pushy-buttons.js'
     }
 
     var output = {
@@ -16,7 +16,7 @@ function createConfig(target) {
     }
     
     if(typeof target === 'undefined') {
-        name = 'vue-push-buttons.js';
+        name = 'vue-pushy-buttons.js';
         output = {
             path: path.resolve(__dirname, 'dist'),
             filename: name
