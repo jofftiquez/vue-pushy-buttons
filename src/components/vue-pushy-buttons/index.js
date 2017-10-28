@@ -20,7 +20,6 @@ export default (Vue) => {
     methods: {
       generateClasses() {
         let _classes = `btn btn--${ this.size } btn--${ this.color }`;
-        console.warn(_classes)
         return _classes;
       }
     }

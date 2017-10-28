@@ -83,7 +83,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VuePushyButtons = {
   install: function install(Vue, options) {
-    console.warn('Installing...');
     (0, _vuePushyButtons2.default)(Vue);
   }
 };
@@ -123,7 +122,6 @@ exports.default = function (Vue) {
     methods: {
       generateClasses: function generateClasses() {
         var _classes = 'btn btn--' + this.size + ' btn--' + this.color;
-        console.warn(_classes);
         return _classes;
       }
     }

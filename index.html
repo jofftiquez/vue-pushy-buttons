@@ -6,12 +6,38 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
     <script src="./dist/vue-pushy-buttons.js"></script>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      h1 {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
       <br>
       <h1 align="center">{{ title }}</h1>
-      <v-pushy-btn label="Vue Push Buttons" size="lg" color="green"></v-pushy-btn>
+      <center>
+        <h2>Green Buttons</h2>
+        <v-pushy-btn label="lg green" size="lg" color="green"></v-pushy-btn><br>
+        <v-pushy-btn label="df green" size="df" color="green"></v-pushy-btn><br>
+        <v-pushy-btn label="md green" size="md" color="green"></v-pushy-btn><br>
+        <v-pushy-btn label="sm green" size="sm" color="green"></v-pushy-btn><br>
+        <h2>Blue Buttons</h2>
+        <v-pushy-btn label="lg blue" size="lg" color="blue"></v-pushy-btn><br>
+        <v-pushy-btn label="df blue" size="df" color="blue"></v-pushy-btn><br>
+        <v-pushy-btn label="md blue" size="md" color="blue"></v-pushy-btn><br>
+        <v-pushy-btn label="sm blue" size="sm" color="blue"></v-pushy-btn><br>
+        <h2>Red Buttons</h2>
+        <v-pushy-btn label="lg red" size="lg" color="red"></v-pushy-btn><br>
+        <v-pushy-btn label="df red" size="df" color="red"></v-pushy-btn><br>
+        <v-pushy-btn label="md red" size="md" color="red"></v-pushy-btn><br>
+        <v-pushy-btn label="sm red" size="sm" color="red"></v-pushy-btn><br>
+      </center>
+      <br><br><br>
     </div>
     <script>
       Vue.use(VuePushyButtons.default)
