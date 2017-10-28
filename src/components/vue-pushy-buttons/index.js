@@ -1,4 +1,4 @@
-import '../../../lib/css/pushy-buttons/pushy-buttons.min.css';
+import '../../lib/css/pushy-buttons/pushy-buttons.min.css';
 
 export default (Vue) => {
   Vue.component('v-pushy-btn', {
@@ -20,7 +20,7 @@ export default (Vue) => {
     methods: {
       generateClasses() {
         let _classes = `btn btn--${ this.size } btn--${ this.color }`;
-        console.log(_classes)
+        console.warn(_classes)
         return _classes;
       }
     }

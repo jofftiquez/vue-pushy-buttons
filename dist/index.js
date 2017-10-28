@@ -83,6 +83,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VuePushyButtons = {
   install: function install(Vue, options) {
+    console.warn('Installing...');
     (0, _vuePushyButtons2.default)(Vue);
   }
 };
@@ -122,7 +123,7 @@ exports.default = function (Vue) {
     methods: {
       generateClasses: function generateClasses() {
         var _classes = 'btn btn--' + this.size + ' btn--' + this.color;
-        console.log(_classes);
+        console.warn(_classes);
         return _classes;
       }
     }
@@ -150,8 +151,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./pushy-buttons.min.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./pushy-buttons.min.css");
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!./pushy-buttons.min.css", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!./pushy-buttons.min.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
