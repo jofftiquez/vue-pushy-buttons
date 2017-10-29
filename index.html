@@ -23,12 +23,49 @@
       <center>
         <h2>Install</h2>
         <strong>NPM</strong><br>
-        <code>npm install vue-pushy-buttons --save</code><br>
+        <code>npm install vue-pushy-buttons --save</code><br><br>
         <strong>Yarn</strong><br>
-        <code>yarn add vue-pushy-buttons</code><br>
+        <code>yarn add vue-pushy-buttons</code><br><br>
         <strong>CDN</strong><br>
         <code>https://unpkg.com/vue-pushy-buttons@0.0.1/dist/vue-pushy-buttons.js</code><br>
         <br>
+      </center>
+      <hr>
+      <table width="100%">
+        <thead>
+          <tr align="left">
+            <th>Size</th>
+            <th>Color</th>
+            <th>Props</th>
+            <th>Usage</th>
+            <th>Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>lg</code></td>
+            <td><code>red</code></td>
+            <td><code>label</code>, <code>size</code>, <code>color</code></td>
+            <td><code>&ltv-push-btn label="Sample" size="sm" color="green"&gt&ltv-pushy-btn&gt</code></td>
+            <td><v-pushy-btn label="Sample" size="sm" color="green"></v-pushy-btn></td>
+          </tr>
+        </tbody>
+      </table>
+      <strong>Available Sizes</strong>
+      <ul>
+        <li><code>lg</code></li>
+        <li><code>df</code></li>
+        <li><code>md</code></li>
+        <li><code>sm</code></li>
+      </ul>
+      <strong>Available Colors</strong>
+      <ul>
+        <li><code>red</code></li>
+        <li><code>blue</code></li>
+        <li><code>green</code></li>
+      </ul>
+      <hr>
+      <center>
         <h2>Green Buttons</h2>
         <v-pushy-btn label="lg green" size="lg" color="green"></v-pushy-btn><br><br>
         <v-pushy-btn label="df green" size="df" color="green"></v-pushy-btn><br><br>
@@ -53,7 +90,7 @@
         el: '#app',
         data() {
           return {
-            title: 'Vue Push Buttons'
+            title: 'Vue Pushy Buttons'
           }
         }
       });
